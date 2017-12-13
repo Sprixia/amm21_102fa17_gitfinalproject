@@ -96,7 +96,7 @@ img.eduimg {
 }
 
 p.hobvoltitle {
-    text-decoration: underline;
+    font-weight: bold;
     clear: left;
 }
 
