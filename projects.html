@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- control viewport for media queries/rwd? -->
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $('#nav_menu').slicknav({prependTo: "#mobile_menu"})
+        } )
+    </script>
+</head>
+<body>
+<header>
+    <h1>Projects</h1>
+</header>
+
+<nav id="mobile_menu"></nav>
+
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li class="current"><a href="projects.html">Projects</a></li>
+        <li class="lastitem"><a href="hobbies.html">Extracurricular</a></li>
+    </ul>
+</nav>
+<main>
+    <h4>Resume Website</h4>
+    <p class="proj">
+        This is the website version of my resume, and is part of my portfolio. It was made using
+        HTML, CSS, JavaScript, and jQuery.
+    </p>
+
+    <h4>A Cherokee Celebration</h4>
+    <p class="proj">
+        This is a game where the player chooses their gender, then plays through a Native
+        American ceremony. They need to help prepare by either collecting food (women) or
+        hunting game animals (men). The game behaves differently and changes point awards
+        based on the player's character selection. It was made using Java and Greenfoot.
+    </p>
+
+    <h4>Heritage Library Foundation Website</h4>
+    <p class="proj">
+        The Heritage Library Foundation is a non-profit organization that provides resources
+        for guests to explore their ancestry and learn more about local history in the Hilton
+        Head region. They were previously using Textpattern for their website. It was not
+        responsive to mobile phones or tablets and fairly out-of-date. I worked with the team
+        assembled by the Association for Computing Machinery (ACM) chapter on campus, which I'm
+        on the board for, to move the old website to a new and responsive content management
+        system, SquareSpace. We used SquareSpace, Trello, and some minor custom HTML/CSS.
+    </p>
+</main>
+
+<footer>&copy; amm21</footer>
+</body>
+</html>

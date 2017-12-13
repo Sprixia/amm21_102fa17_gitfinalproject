@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- control viewport for media queries/rwd? -->
+    <title>Extracurricular</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({prependTo: "#mobile_menu"})
+        })
+    </script>
+</head>
+<body>
+<header>
+    <h1>Volunteer Work</h1>
+</header>
+
+<nav id="mobile_menu"></nav>
+
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li class="lastitem current"><a href="hobbies.html">Extracurricular</a></li>
+    </ul>
+</nav>
+<main>
+
+
+    <!-- photo is my own -->
+    <img class="hobvol" src="images/foster.png" alt="foster">
+    <p class="hobvoltitle">Volunteer &amp; Foster, Palmetto Animal League (May 2013 &ndash; present)</p>
+    <p class="hobvoldesc">
+        For over four years I've worked regularly with a local shelter both as a volunteer at their
+        actual facility, and as a foster by taking home animals in need of additional care. Pictured
+        here on the left is Reggie, a three week old kitten who I had for six months until she was
+        ready for adoption.
+    </p>
+
+    <p class="hobvoltitle">Computational Science Note-taker, USCB (August 2017 &ndash; present)</p>
+        <p class="hobvoldesc">
+            The University of South Carolina Beaufort has accommodations available for students
+            with disabilities. Access to notes is one of those accommodations, and I provided
+            that for one of my classes during the Fall semester. I scanned and shared my notes
+            from each class with students who had provided the proper documentation to USCB's
+            disability services department.
+        </p>
+
+    <!-- image and information from http://www.nea.org/ -->
+    <img class="hobvol" src="images/read_america.png" alt="readamerica">
+    <p class="hobvoltitle">Read Across America (March 2016)</p>
+    <p class="hobvoldesc">
+        Read Across America is an annual event held on March 2nd that celebrates and promotes
+        reading for children. Hundreds of schools across the country participate. The National
+        Education Association and its sponsors provide support for the event, as well as year-round
+        support for schools trying to promote reading for their students. For my part in this
+        event last fall, I ran the sign-in and welcome center. I also provided the tickets that
+        kids could exchange for free books.
+    </p>
+
+    <!-- image and information from https://soarspecialrecreation.org/ and http://so-sc.org/ -->
+    <img class="hobvol" src="images/SOAR.png" alt="specialolympics">
+    <p class="hobvoltitle">S.O.A.R. Special Olympics (June 2016)</p>
+    <p class="hobvoldesc">
+        S.O.A.R. is an organization that focuses on providing year-round recreation activities
+        for people with disabilities. They work with both children and adults. Every year, they
+        organize the Special Olympics in our area and provide lunch, t-shirts, awards, photos,
+        and an overall fun afternoon for all participants. I helped with general setup work
+        last year.
+    </p>
+
+</main>
+
+<footer>&copy; amm21</footer>
+</body>
+</html>

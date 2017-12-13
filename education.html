@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- control viewport for media queries/rwd? -->
+    <title>Education</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $('#nav_menu').slicknav({prependTo: "#mobile_menu"})
+        } )
+    </script>
+</head>
+<body>
+<header>
+    <h1>Education and Awards</h1>
+</header>
+
+<nav id="mobile_menu"></nav>
+
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li class="lastitem"><a href="hobbies.html">Extracurricular</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h4>University of South Carolina &ndash; Beaufort</h4>
+    <ul class="edu">
+        <li>August 2016 &ndash; Present</li>
+        <li>B.S. in Computational Science, expected Spring 2020 (Overall GPA: 4.00)</li>
+        <ul class="ug_course"><i>Selected undergraduate coursework</i>:
+            <li>MATLAB</li>
+            <li>Intro to Computational Science</li>
+            <li>Java Programming &amp; Algorithmic Design</li>
+            <li>Database Management Systems</li>
+            <li>Web Programming (HTML/CSS &amp; JavaScript)</li>
+        </ul>
+    </ul>
+
+
+    <h4>Honors and Awards</h4>
+    <ul class="honoraward">
+        <li>National Science Foundation S-STEM Scholarship (August 2016 &ndash; present)</li>
+        <li>Membership Chair, Association for Computing Machinery (ACM) Chapter at USCB (August 2017 &ndash; present)</li>
+        <li>Secretary, Gamma Beta Phi National Honor Society (August 2017 &ndash; present)</li>
+        <li>USC President’s List (Fall 2016, Spring 2017)</li>
+        <li><i>Certificates completed for MOOC Coursework</i>: HTML &amp; CSS (Codecademy)</li>
+    </ul>
+
+
+    <h4>Languages, Frameworks, and Technologies</h4>
+    <ul class="tech">
+        <li>Novice: MATLAB, HTML/CSS, Java, MySQL</li>
+        <li>Beginner: JavaScript, jQuery</li>
+        <li>JetBrains WebStorm, NetBeans, MATLAB, MySQL WorkBench, Git/BitBucket, SquareSpace, Trello, GreenFoot, CodePen</li>
+    </ul>
+</main>
+
+<footer>&copy; amm21</footer>
+</body>
+</html>

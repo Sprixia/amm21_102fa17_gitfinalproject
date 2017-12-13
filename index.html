@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- queries for the screen size to scale accordingly -->
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- the following stylesheet and scripts are what control
+    the slicknav plugin from jQuery, giving the miniature navigation
+    menu when the screen size goes to "mobile" size -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function() {
+            $('#nav_menu').slicknav({prependTo: "#mobile_menu"})
+        } )
+    </script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>
+        Homepage
+    </h1>
+</header>
+
+<nav id="mobile_menu"></nav> <!-- the mobile menu is handled through slicknav -->
+
+<nav id="nav_menu">
+    <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li class="lastitem"><a href="hobbies.html">Extracurricular</a></li>
+    </ul>
+</nav>
+
+<main>
+    <img class="amm_img" src="images/amm.png" alt="author_image">
+
+    <p>
+        My name is Alexis Miller and I’m a junior at the University of South Carolina Beaufort majoring in
+        Computational Science. My expected graduation date is Spring 2020.
+    </p>
+
+    <p>
+        I’m searching for a Summer 2018 internship focused on Software Engineering. I created this website
+        from scratch using HTML, CSS, JavaScript, and some jQuery. It’s responsive to all screen sizes and
+        contains a more detailed version of my resume. My standard resume can be viewed as a pdf below.
+    </p>
+
+    <ul id="contact">
+        <li><a href="mailto:amm21@email.uscb.edu">amm21@email.uscb.edu</a></li>
+        <li><a href="tel:+1-732-492-9323">732-492-9323</a></li>
+        <li><a target="_blank" href="documents/alexismiller_resume_092617.pdf">Resume</a></li></li>
+    </ul>
+</main>
+
+<footer>
+    &copy; amm21
+</footer>
+</body>
+</html>

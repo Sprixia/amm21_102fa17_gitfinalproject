@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url("../images/old_moon.png");
+}
+
+body {
+    width: 90%;
+    max-width: 960px;
+    margin: 0.5em auto; /* centers body with max-width */
+    padding: 2em;
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    padding-top: 1em;
+}
+
+ul.honoraward {
+    list-style-type: square;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+ul.edu {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+ul.ug_course li {
+    margin-left: 1.5em;
+    list-style-type: square;
+}
+
+ul.tech {
+    list-style-type: square;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+ul.exp {
+    list-style: none;
+}
+
+p {
+    clear: both;
+    padding: 1em;
+}
+
+p.exp {
+    padding: 0.2em 0 1em 0.5em;
+}
+
+img.amm_img {
+    border-radius: 50%; /* this gives the image its round shape */
+    border: 1px solid black;
+    margin: 1em auto;
+    display: block; /* this and the margin allow the image to be centered */
+}
+
+img.hobvol {
+    border-radius: 20%;
+    border: 1px solid black;
+    margin: 0.5em;
+    display: block;
+    float: right;
+    max-width: 200px;
+    max-height: 100px;
+}
+
+p.hobvoltitle {
+    text-decoration: underline;
+    clear: left;
+}
+
+p.hobvoldesc {
+    margin-bottom: 3em;
+    clear: left;
+    padding-top: 0;
+}
+
+p.proj {
+    padding-top: 0.1em;
+}
+
+#mobile_menu { /* hide the mobile_menu until it's needed */
+    display: none;
+}
+
+/* Navigation menu is handled here */
+#nav_menu {
+    margin-bottom: 4em;
+}
+
+#nav_menu ul { /* <ul> within #nav_menu */
+    /* OPERATION */
+    list-style: none;
+    position: relative;
+
+    /* FORMAT */
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li { /* <li> within <ul> within #nav_menu */
+    float: left; /* this is what makes the menu horizontal */
+    width: 19%; /* centers the navigation menu */
+    min-width: 115px;
+}
+
+#nav_menu ul li a { /* <a> within <li> within <ul> within #nav_menu */
+    /* FORMAT */
+    text-align: center;
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.60);
+}
+
+.lastitem {
+    border-right: 1px solid black;
+}
+
+.current {
+    font-weight: bold;
+}
+
+#contact { /* styles the contact info on homepage */
+    list-style: none;
+    padding-left: 1em;
+}
+
+footer {
+    padding-top: 3em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) { /* scale appropriately to tablets */
+    html {
+        background: lightgray; /* removes the background image and changes to a solid color*/
+    }
+
+    body {
+        font-size: 90%; /* change the font size to 90% */
+    }
+}
+
+@media only screen and (max-width: 767px) { /* additional formatting if the tablet is in landscape */
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu { /* replaces the traditional nav menu with the slicknav mini */
+        display: block;
+    }
+
+    header h2 {
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 479px) { /* formatting if using a mobile phone */
+    header h2 {
+        font-size: 180%;
+    }
+
+    header h3 {
+        font-size: 115%;
+    }
+}
