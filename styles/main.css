@@ -7,17 +7,30 @@ html {
     background-image: url("../images/old_moon.png");
 }
 
+aside {
+    float: left;
+    width: 33%;
+}
+
+section {
+    float: right;
+    width: 66%;
+}
+
 body {
     width: 90%;
     max-width: 960px;
+    min-height: 550px;
     margin: 0.5em auto; /* centers body with max-width */
     padding: 2em;
     border: 1px solid black;
     background: rgba(255, 255, 255, 0.50);
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 h4 {
@@ -74,6 +87,10 @@ img.hobvol {
     float: right;
     max-width: 200px;
     max-height: 100px;
+}
+
+img.eduimg {
+    border-radius: 50%
 }
 
 p.hobvoltitle {
@@ -145,6 +162,7 @@ p.proj {
 footer {
     padding-top: 3em;
     text-align: center;
+    clear: both;
 }
 
 @media only screen and (max-width: 800px) { /* scale appropriately to tablets */
